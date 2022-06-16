@@ -1,0 +1,66 @@
+.connect {
+    margin: 1rem;
+    &__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    &__info {
+        font-size: 2rem;
+    }
+    &__icon {
+        width: 1.5rem;
+    }
+    &__label {
+        font-family: Source Sans Pro, sans-serif;
+        font-weight: 700;
+    }
+}
+
+
+.submit{
+    &__bg {
+        background-color: $color-secondary;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: DM Serif Display, sans-serif;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-black;
+        }
+        &:active {
+            background-color: $color-primary;
+            color: $color-black;
+        }
+        &:focus {
+            background-color: $color-primary;
+            color: $color-black;
+        }
+    }
+}
+
+@include respond(lg) {
+    .connect {
+        margin: 3rem 5rem;
+        &__title {
+            font-size: 8rem;
+            margin-bottom: 2rem;
+        }
+        &__form {
+            border: 1px solid #6C808B;
+            border-radius: 10px;
+            padding: 3rem;
+        }
+        &__info {
+            font-size: 3rem;
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+        &__icon {
+            width: 3.5rem;
+        }
+    }
+
+}

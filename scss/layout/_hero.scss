@@ -1,0 +1,136 @@
+.hero {
+    height: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__header {
+        letter-spacing: .2rem;
+        margin: 0 2rem;
+    }
+    &__title {
+        font-size: 3rem;
+        margin-top: 12rem;  
+        margin-bottom: 4rem; 
+    }
+    &__photo {
+        margin-top: 4rem;
+        width: 50%;
+    }
+}
+
+.signature {
+    &__format {
+        position: static;
+        bottom: -4rem;
+        left: 55rem;
+        font-size: 3rem;
+
+    }
+}
+
+@include respond(sm) {
+    .hero {
+        &__title {
+            font-size: 4rem;
+            margin-top: 10rem;
+        }
+        &__photo {
+            width: 30%;
+        }
+    }
+    .signature {
+        &__format {
+            position: static;
+            bottom: -4rem;
+            left: 55rem;
+            font-size: 3rem;
+    
+        }
+    }
+}
+
+@include respond(md) {
+    .hero {
+        &__title {
+            margin-top: 20rem;
+        }
+        &__summary {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@include respond (lg){
+    .hero {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-flow: row;
+        align-items: center;
+        position: relative;
+        &__header {
+            margin: 0 10rem;
+            width: 50%;
+        }   
+        &__title {
+            font-size: 6rem;   
+        }
+        &__summary {
+            font-size: 3rem;
+        }
+        &__profile {
+            order: 2;
+        }
+        &__photo {
+            width: 35%;
+            position: absolute;
+            top: -10rem;
+            right: 0;
+            border-radius: 50%;
+        }
+    }
+    .signature {
+        &__format {
+            position: absolute;
+            bottom: -5rem;
+            left: 55rem;
+            font-size: 4rem;
+    
+        }
+    }
+}
+
+@include respond(xl) {
+    .signature {
+        &__format {
+            position: absolute;
+            bottom: -6rem;
+            left: 45rem;
+            font-size: 4rem;
+        }
+    }
+}
+
+@include respond(xxl) {
+    .hero {
+        margin-left: 5rem;
+        &__title {
+            font-size: 6rem;
+            margin-top: 10rem;
+        }
+        &__summary {
+            font-size: 4rem;
+        }
+    }
+    .signature {
+        &__format {
+            position: absolute;
+            bottom: -4rem;
+            left: 55rem;
+            font-size: 4rem;
+    
+        }
+    }
+}
