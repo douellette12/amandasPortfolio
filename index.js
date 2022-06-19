@@ -49,6 +49,9 @@ app.get("/about", (req, res) => {
 app.get("/work", (req, res) => {
     res.render("pages/work")
 })
+app.get("/work/brand", (req, res) => {
+    res.render("pages/brand")
+})
 
 app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`)

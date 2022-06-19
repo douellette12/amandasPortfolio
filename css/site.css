@@ -131,7 +131,7 @@ p {
 @media (min-width: 992px) {
   .navigation {
     display: block;
-    height: 10rem;
+    height: 15rem;
     background-color: #FAF4E5; }
     .navigation__checkbox {
       display: none; }
@@ -160,7 +160,7 @@ p {
     .navigation__logo {
       position: absolute;
       z-index: 10000;
-      top: 3rem;
+      top: 7.5rem;
       right: 2rem;
       left: auto;
       height: 10rem;
@@ -178,10 +178,7 @@ p {
         transform: translate(-50%, -50%);
         font-size: 3rem;
         font-weight: 500;
-        letter-spacing: 2px; }
-    .navigation__extend-bg {
-      height: 15rem;
-      background-color: #FAF4E5; } }
+        letter-spacing: 2px; } }
 
 .hero {
   height: 50rem;
@@ -307,7 +304,7 @@ p {
 
 @media (min-width: 992px) {
   .connect {
-    margin: 3rem 5rem; }
+    margin: 10rem 5rem; }
     .connect__title {
       font-size: 8rem;
       margin-bottom: 2rem; }
@@ -321,3 +318,12 @@ p {
         margin-bottom: 3rem; }
     .connect__icon {
       width: 3.5rem; } }
+
+.about-me {
+  font-size: 3rem;
+  margin: 5rem 6rem; }
+  .about-me__photo {
+    padding: 0 6rem; }
+
+.brand {
+  margin: 6rem; }
