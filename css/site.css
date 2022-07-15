@@ -1,7 +1,7 @@
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -20,13 +20,12 @@ body {
   src: url(AmalfiCoast.ttf); }
 
 body {
-  font-size: 1.6rem; }
-
-h1 {
+  font-size: 1.6rem;
   font-family: DM Serif Display, sans-serif; }
 
 p {
-  font-family: Source Sans Pro, sans-serif; }
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 300; }
 
 .signature {
   font-family: Amalfi, sans-serif; }
@@ -320,10 +319,125 @@ p {
       width: 3.5rem; } }
 
 .about-me {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 5rem 6rem; }
+  @media (min-width: 576px) {
+    .about-me {
+      font-size: 2rem; } }
+  @media (min-width: 768px) {
+    .about-me {
+      font-size: 2.5rem; } }
   .about-me__photo {
     padding: 0 6rem; }
 
 .brand {
   margin: 6rem; }
+  .brand__box {
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25); }
+  .brand__text {
+    font-size: 2rem; }
+
+.work {
+  margin: 10rem 5rem 10rem 5rem; }
+  .work__brand {
+    display: block;
+    margin-top: 1rem;
+    background-color: #A3A9A0;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2rem; }
+    @media (min-width: 1200px) {
+      .work__brand {
+        width: 61rem;
+        height: 37rem; } }
+
+.travel-time {
+  margin: 2rem;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .travel-time {
+      margin: 5rem;
+      text-align: left; } }
+  @media (min-width: 1400px) {
+    .travel-time {
+      margin: 2rem 10rem; } }
+  .travel-time__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 992px) {
+      .travel-time__section {
+        flex-direction: row;
+        justify-content: space-between; } }
+  @media (min-width: 992px) {
+    .travel-time__purpose {
+      width: 60%; } }
+  @media (min-width: 992px) {
+    .travel-time__design {
+      margin-top: 10rem; } }
+  @media (min-width: 992px) {
+    .travel-time__components {
+      margin-top: -15rem; } }
+  .travel-time__title {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+    @media (min-width: 992px) {
+      .travel-time__title {
+        font-size: 6rem;
+        margin-bottom: 10rem; } }
+    .travel-time__title--2 {
+      font-size: 2.5rem; }
+      @media (min-width: 992px) {
+        .travel-time__title--2 {
+          font-size: 4.5rem;
+          margin-bottom: 5rem; } }
+  @media (min-width: 992px) {
+    .travel-time__tagline {
+      font-size: 2.5rem; } }
+  @media (min-width: 1400px) {
+    .travel-time__tagline {
+      font-size: 3rem; } }
+  .travel-time__mockups-container {
+    max-width: 100%;
+    height: auto; }
+  .travel-time__mockups {
+    max-width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    @media (min-width: 992px) {
+      .travel-time__mockups {
+        height: 50rem;
+        justify-content: space-between; } }
+    @media (min-width: 1400px) {
+      .travel-time__mockups {
+        height: 60rem; } }
+  .travel-time__mockup {
+    max-width: 100%;
+    height: auto; }
+    @media (min-width: 992px) {
+      .travel-time__mockup {
+        margin-right: -2rem; } }
+    @media (min-width: 1400px) {
+      .travel-time__mockup {
+        margin-right: -4rem; } }
+    @media (min-width: 992px) {
+      .travel-time__mockup--1 {
+        align-self: flex-start;
+        margin-left: 4rem; } }
+    @media (min-width: 992px) {
+      .travel-time__mockup--3 {
+        align-self: flex-end; } }
+  .travel-time__person-name {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem; }
+    @media (min-width: 992px) {
+      .travel-time__person-name {
+        font-size: 2.5rem;
+        margin-bottom: 5rem; } }
+  @media (min-width: 992px) {
+    .travel-time__pain-point {
+      font-size: 2.2rem; } }
+  .travel-time__accessibility {
+    margin: 10rem 0; }
