@@ -1,0 +1,115 @@
+.travel-time {
+    margin: 2rem;
+    text-align: center;
+    @include respond(lg) {
+        margin: 5rem;
+        text-align: left;
+    }
+    @include respond(xxl) {
+        margin: 2rem 10rem;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include respond(lg) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__purpose {
+        @include respond(lg) {
+            width: 60%;
+        }
+    }
+    &__design {
+        @include respond(lg) {
+            margin-top: 10rem;
+        }
+    }
+    &__components {
+        @include respond(lg) {
+            margin-top: -15rem;
+        }
+    }
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        @include respond(lg) {
+            font-size: 6rem;
+            margin-bottom: 10rem;
+        }
+        &--2 {
+            font-size: 2.5rem;
+            @include respond(lg) {
+                font-size: 4.5rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    &__tagline {
+        @include respond(lg) {
+            font-size: 2.5rem;
+        }
+        @include respond(xxl) {
+            font-size: 3rem;
+        }
+    }
+    &__mockups-container {
+        max-width: 100%;
+        height: auto;
+    }
+    &__mockups {
+        max-width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include respond(lg) {
+            height: 50rem;
+            justify-content: space-between;
+        }
+        @include respond(xxl) {
+            height: 60rem;
+        }
+    }
+    &__mockup {
+        max-width: 100%;
+        height: auto;
+        @include respond(lg) {
+            margin-right: -2rem;
+        }
+        @include respond(xxl) {
+            margin-right: -4rem;
+        }
+        &--1 {
+            @include respond(lg) {
+                align-self: flex-start;
+                margin-left: 4rem;
+            }
+        }
+        &--2 {
+        }
+        &--3 {
+            @include respond(lg) {
+                align-self: flex-end;
+            }
+        }
+    }
+    &__person-name {
+        font-family: Source Sans Pro, sans-serif;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        @include respond(lg) {
+            font-size: 2.5rem;
+            margin-bottom: 5rem;
+        }
+    }
+    &__pain-point {
+        @include respond(lg) {
+            font-size: 2.2rem;
+        }
+    }
+    &__accessibility {
+        margin: 10rem 0;
+    }
+}

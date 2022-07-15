@@ -1,0 +1,16 @@
+.work {
+    margin: 10rem 5rem 10rem 5rem;
+    &__brand {
+        display: block;
+        margin-top: 1rem;
+        background-color: #A3A9A0;
+        width: 30rem;
+        height: 20rem;
+        border-radius: 2rem;
+        @include respond(xl) {
+            width: 61rem;
+            height: 37rem;
+        }
+    }
+
+}

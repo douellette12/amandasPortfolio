@@ -1,0 +1,13 @@
+.about-me {
+    font-size: 1.5rem;
+    margin: 5rem 6rem;
+    @include respond(sm) {
+        font-size: 2rem;
+    }
+    @include respond(md) {
+        font-size: 2.5rem;
+    }
+    &__photo {
+        padding: 0 6rem;
+    }
+}
