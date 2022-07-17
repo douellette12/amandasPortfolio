@@ -55,6 +55,9 @@ app.get("/work/brand", (req, res) => {
 app.get("/work/travel-app-ui", (req, res) => {
     res.render("pages/travelTime")
 })
+app.get("/work/unit-manager-team-portal", (req, res) => {
+    res.render("pages/teamPortal")
+})
 
 app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`)
