@@ -1,15 +1,73 @@
 .work {
     margin: 10rem 5rem 10rem 5rem;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 100%;
+        @include respond(lg) {
+            flex-direction: row;
+        }
+    }
+    &__project {
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 10rem;
+        &:not(:last-child) {
+            margin-right: 10rem;
+        }
+    }
     &__brand {
         display: block;
         margin-top: 1rem;
         background-color: #A3A9A0;
-        width: 30rem;
-        height: 20rem;
+        width: 100%;
+        height: 100%;
         border-radius: 2rem;
-        @include respond(xl) {
-            width: 61rem;
-            height: 37rem;
+        position: relative;
+    }
+    &__box {
+        background-color: #AB6A46;
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: DM Serif Display, sans-serif;
+        color: white;
+        font-size: 2rem;
+    }
+    &__mockups {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+    }
+    &__mockup {
+        width: 33%;
+        position: absolute;
+        &--1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 40%;
+            z-index: 1;
+            transform: translate(-50%, -50%)
+        }
+        &--2 {
+            position: absolute;
+            left: 15%;
+            top: 12%;
+            z-index: 0;
+        }
+        &--3 {
+            position: absolute;
+            right: 15%;
+            top: 12%;
+            z-index: 0;
         }
     }
 

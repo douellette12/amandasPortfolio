@@ -331,25 +331,97 @@ p {
     padding: 0 6rem; }
 
 .brand {
-  margin: 6rem; }
+  margin: 2rem; }
+  @media (min-width: 768px) {
+    .brand {
+      margin: 4.5rem; } }
+  @media (min-width: 992px) {
+    .brand {
+      margin: 6rem; } }
   .brand__box {
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5rem;
+    margin: 2.5rem auto; }
+    @media (min-width: 576px) {
+      .brand__box {
+        width: 33%;
+        margin-bottom: 0; } }
+    .brand__box:not(:last-child) {
+      margin-right: auto; }
+      @media (min-width: 992px) {
+        .brand__box:not(:last-child) {
+          margin-right: 3rem; } }
   .brand__text {
-    font-size: 2rem; }
+    font-size: 1.3rem; }
+    @media (min-width: 768px) {
+      .brand__text {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .brand__text {
+        font-size: 2rem; } }
 
 .work {
   margin: 10rem 5rem 10rem 5rem; }
+  .work__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 100%; }
+    @media (min-width: 992px) {
+      .work__container {
+        flex-direction: row; } }
+  .work__project {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 10rem; }
+    .work__project:not(:last-child) {
+      margin-right: 10rem; }
   .work__brand {
     display: block;
     margin-top: 1rem;
     background-color: #A3A9A0;
-    width: 30rem;
-    height: 20rem;
-    border-radius: 2rem; }
-    @media (min-width: 1200px) {
-      .work__brand {
-        width: 61rem;
-        height: 37rem; } }
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative; }
+  .work__box {
+    background-color: #AB6A46;
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: DM Serif Display, sans-serif;
+    color: white;
+    font-size: 2rem; }
+  .work__mockups {
+    position: relative;
+    max-width: 100%;
+    height: 100%; }
+  .work__mockup {
+    width: 33%;
+    position: absolute; }
+    .work__mockup--1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 40%;
+      z-index: 1;
+      transform: translate(-50%, -50%); }
+    .work__mockup--2 {
+      position: absolute;
+      left: 15%;
+      top: 12%;
+      z-index: 0; }
+    .work__mockup--3 {
+      position: absolute;
+      right: 15%;
+      top: 12%;
+      z-index: 0; }
 
 .travel-time {
   margin: 2rem;
@@ -441,3 +513,6 @@ p {
       font-size: 2.2rem; } }
   .travel-time__accessibility {
     margin: 10rem 0; }
+
+.team-portal {
+  height: 80vh; }

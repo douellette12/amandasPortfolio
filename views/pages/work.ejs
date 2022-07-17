@@ -1,20 +1,29 @@
 <%- include("../partials/header.ejs", {title: "| My Work"}); %> 
 <div class="work">
-    <div class="row">
-        <div class="col col-md-6">
+    <div class="work__container">
+        <div class="work__project">
             <h1>Personal Branding</h1>
-            <a class="work__brand" href="/work/brand"></a>
+            <a class="work__brand" href="/work/brand">
+                <div class="work__box">
+                    <img src="../../images/ALogo.svg" alt="">
+                    <span class="pt-4">FOX</span>
+                </div>
+            </a>
         </div>
-        <div class="col col-md-6">
+        <div class="work__project">
             <h1>Travel App UI</h1>
-            <a class="work__brand" href="/work/travel-app-ui"></a>
+            <a class="work__brand" href="/work/travel-app-ui">
+                <div class="work__mockups">
+                    <img class="img-fluid work__mockup work__mockup--1" src="../../images/image 21.svg" alt="">
+                    <img class="img-fluid work__mockup work__mockup--2" src="../../images/image 28.svg" alt="">
+                    <img class="img-fluid work__mockup work__mockup--3" src="../../images/image 33.svg" alt="">
+                </div>
+            </a>
         </div>
-    </div>
-    <div class="row justify-content-md-center mt-5">
-        <div class="col-6">
+        <div class="work__project">
             <h1>Unit Manager Team Portal</h1>
-            <a class="work__brand" href="/work/unit-manager-team-portal">
-                <img class="img-fluid" src="../../images/team_portal.svg" alt="">
+            <a href="/work/unit-manager-team-portal">
+                <img class="img-fluid mt-4" src="../../images/team_portal.svg" alt="">
             </a>
         </div>
     </div>
