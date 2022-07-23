@@ -16,15 +16,20 @@
         &:not(:last-child) {
             margin-right: 10rem;
         }
+        @include respond(lg) {
+            width: 50%;
+            margin: 0 auto;
+        }
     }
     &__brand {
         display: block;
         margin-top: 1rem;
         background-color: #A3A9A0;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         border-radius: 2rem;
         position: relative;
+
     }
     &__box {
         background-color: #AB6A46;
@@ -44,29 +49,39 @@
     &__mockups {
         position: relative;
         max-width: 100%;
-        height: 100%;
+        height: auto;
+        @include respond(lg) {
+            height: 100%;
+        }
+
     }
     &__mockup {
-        width: 33%;
-        position: absolute;
+        width: 20%;
+        @include respond(lg) {
+            width: 33%;
+        }
         &--1 {
             position: absolute;
             left: 50%;
-            top: 50%;
-            width: 40%;
+            top: 55%;
+            width: 25%;
             z-index: 1;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
+            @include respond(lg) {
+                width: 40%;
+                
+            }
         }
         &--2 {
             position: absolute;
             left: 15%;
-            top: 12%;
+            top: 15%;
             z-index: 0;
         }
         &--3 {
             position: absolute;
             right: 15%;
-            top: 12%;
+            top: 15%;
             z-index: 0;
         }
     }
