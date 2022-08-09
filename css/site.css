@@ -344,7 +344,6 @@ p {
     margin: 2.5rem auto; }
     @media (min-width: 576px) {
       .brand__box {
-        width: 33%;
         margin-bottom: 0; } }
     .brand__box:not(:last-child) {
       margin-right: auto; }
